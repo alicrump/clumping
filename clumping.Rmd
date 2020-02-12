@@ -1,0 +1,38 @@
+---
+title: "clumping"
+author: "Ali Crump"
+date: "2/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(moderndive)
+library(tibble)
+```
+
+```{r}
+class
+males <- replicate(16, "M")
+females <- replicate(18,"F")
+class <-c(males,females)
+```
+
+
+```{r}
+tibble <- as.tibble(c("table_1","table_2","table_3","table_4","table_5","table_6","table_7","table_8","table_9"))
+
+my_sample <- sample(class)
+my_sample[1:4]
+my_sample[5:8]
+my_sample[9:12]
+my_sample[13:16]
+my_sample[17:20]
+my_sample[21:24]
+my_sample[25:28]
+my_sample[29:32]
+my_sample[33:34]
+
+```
+
